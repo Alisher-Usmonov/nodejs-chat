@@ -1,0 +1,11 @@
+.chat-field {
+    height: calc(100% - 3rem);
+}
+.chat-field::-webkit-scrollbar {
+    width: 8px;
+    background: #ededed;
+}
+.chat-field::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: #333333;
+}

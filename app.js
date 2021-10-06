@@ -16,7 +16,7 @@ app.set("views", path.join(__dirname, "pages"))
 app.use(CookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "pages", "styles")))
+app.use("/styles", express.static(path.join(__dirname, "pages", "styles")))
 app.get("/", (req, res) => {
     const { name } = req.cookies;
     if(!name) {
