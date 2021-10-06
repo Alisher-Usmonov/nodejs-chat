@@ -63,20 +63,20 @@ app.get("/chat", async (req, res) => {
 })
 
 app.post("/chat", async (req, res) => {
-    
     let { text } = req.body;
     let { name } = req.cookies;
     let db = await fs.readFile(path.join(__dirname, "database.json"), "utf-8");
     db = JSON.parse(db);
     let user_id = db.users.filter(user => user.name === name);
-    console.log(user_id);
-    db.messages.push({
-        id: uuidv4(),
-        text,
-        user_id: user_id[0].id
-    })
-    await fs.writeFile(path.join(__dirname, "database.json"), JSON.stringify(db));
-    res.redirect(req.url);
+    if(name) {
+        db.messages.push({
+            id: uuidv4(),
+            text,
+            user_id: user_id[0].id
+        })
+        await fs.writeFile(path.join(__dirname, "database.json"), JSON.stringify(db));
+        res.redirect(req.url);
+    } 
 })
 
 app.get('/leave', (req, res) => {

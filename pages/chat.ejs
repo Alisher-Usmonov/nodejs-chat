@@ -10,7 +10,7 @@
 </head>
 <body class="overflow-hidden">
     <div class="container mx-auto bg-gradient-to-tr rounded-xl from-red-300 to-indigo-300 min-h-screen p-1 flex">
-        <div class="w-3/12 bg-white rounded-xl rounded-tr-none  min-h-screen p-1 flex flex-col gap-1 overflow-y-scroll user-list">
+        <div class="hidden md:flex w-3/12 bg-white rounded-xl rounded-tr-none  min-h-screen p-1 flex-col gap-1 overflow-y-scroll user-list">
             <a href="/leave" class="h-14 w-full bg-red-500 rounded-lg flex items-center pl-4 font-bold text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -21,10 +21,10 @@
                 <p class="h-16 text-lg flex items-center rounded-xl pl-3 w-full font-bold <%=user.name.toLowerCase() === me.toLowerCase() ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-900" %> "><%=user.name%></p>
             <% })  %> 
         </div>
-        <div class="w-9/12 min-h-screen relative bg-gray-300 rounded-xl rounded-tl-none">
+        <div class="w-screen md:w-9/12 min-h-screen relative bg-gray-300 rounded-xl rounded-tl-none">
             <div class="overflow-y-scroll chat-field bg-indigo-300">
                 <%db.messages.map(msg => { %>
-                    <div class="h-auto w-96 rounded-2xl bg-green-100  ml-3 mt-3 p-2 rounded-bl-none shadow-lg">
+                    <div class="h-auto w-60 md:w-96 rounded-2xl bg-green-100  ml-3 mt-3 p-2 rounded-bl-none shadow-lg">
                         <h3 class="font-bold text-sm text-gray-800"><%=db.users.filter(user => user.id === msg.user_id)[0].name %> </h3>
                         <h3 class="text-lg"><%=msg.text %> </h3>
                     </div>
