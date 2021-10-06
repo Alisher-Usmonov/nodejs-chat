@@ -1,1 +1,4 @@
-{"users":[{"name":"Alisher","id":"10c5b1e4-e58c-4281-997b-0fb7173dc06d"},{"name":"Muhammadxon","id":"d31f8a64-c029-42b6-9c2f-1d8481ee767b"}],"messages":[{"id":"3d28e0f5-4817-42bd-9aaf-e09bf667a45a","text":"Salom hammaga !","user_id":"d31f8a64-c029-42b6-9c2f-1d8481ee767b"},{"id":"b1e153e5-79b7-4125-8425-df864ff4811f","text":"Salom hammaga !","user_id":"d31f8a64-c029-42b6-9c2f-1d8481ee767b"},{"id":"0bc3d765-740a-47e4-9622-e3803ab48f50","text":"Golangni o'rganvossilami ?","user_id":"d31f8a64-c029-42b6-9c2f-1d8481ee767b"}]}
+{
+    "users": [],
+    "messages": []
+}
