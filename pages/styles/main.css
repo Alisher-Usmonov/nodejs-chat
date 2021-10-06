@@ -9,3 +9,14 @@
     width: 100%;
     background: #333333;
 }
+.user-list {
+    height: 100%;
+}
+.user-list::-webkit-scrollbar {
+    width: 8px;
+    background: #ededed;
+}
+.user-list::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: #333333;
+}

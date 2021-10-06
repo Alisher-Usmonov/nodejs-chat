@@ -30,7 +30,6 @@ app.get("/login", (req, res) => {
 })
 app.post("/login", async (req, res) => {
     let { name } = req.body;
-    console.log(name);
     const dbPath = path.join(__dirname, "database.json");
     let db = await fs.readFile(dbPath, "utf-8");
     db = await JSON.parse(db);
@@ -50,6 +49,13 @@ app.get("/chat", async (req, res) => {
     const { name } = req.cookies;
     let db = await fs.readFile(path.join(__dirname, "database.json"), "utf-8");
     db = JSON.parse(db);
+    if(!name) {
+        res.redirect("/");
+        return;
+    } else if (db.users.length === 0) {
+        res.clearCookie("name").redirect("/");
+        return;
+    }
     res.render("chat", {
         db,
         me: name
