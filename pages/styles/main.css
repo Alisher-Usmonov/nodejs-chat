@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   background: #c9c4c6;
   gap: 8px;
+  overflow-y: scroll;
 }
 .leave {
   display: block;
