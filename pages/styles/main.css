@@ -90,7 +90,7 @@ body {
     gap: 5px;
     padding: 5px;
     position: fixed;
-    bottom: 10%;
+    bottom: 0;
     left: 0;
 }
 .chat-field .input,
