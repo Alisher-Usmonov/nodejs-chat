@@ -83,7 +83,8 @@ body {
     color: #555555;
 }
 .chat-field {
-    height: 10%;
+    width: 100%;
+    height: auto;
     background: #dad3d3;
     display: flex;
     align-items: center;
@@ -96,7 +97,7 @@ body {
 .chat-field .input,
 .chat-field .btn {
     display: block;
-    height: 100%;
+    height: 50px;
     border-radius: 15px;
     border: 2px solid #871bcf;
     font-size: 18px;

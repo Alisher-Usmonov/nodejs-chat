@@ -76,7 +76,10 @@ app.post("/chat", async (req, res) => {
         })
         await fs.writeFile(path.join(__dirname, "database.json"), JSON.stringify(db));
         res.redirect(req.url);
-    } 
+        return;
+    } else {
+        res.redirect(req.url);
+    }
 })
 
 app.get('/leave', (req, res) => {

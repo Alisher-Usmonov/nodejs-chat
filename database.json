@@ -1,4 +1,1 @@
-{
-    "users": [],
-    "messages": []
-}
+{"users":[{"name":"Alisher","id":"e4d847ca-2c13-47ff-b9df-c3052550a89a"},{"name":"Nodirbek","id":"f45fbb13-2f62-417b-9a6c-7ae7c2fe1f1f"}],"messages":[{"id":"94115e97-4271-48dd-ba8d-9ec83107d12b","text":"python","user_id":"e4d847ca-2c13-47ff-b9df-c3052550a89a"},{"id":"87f5c55e-c70e-4e68-b9c2-53fd04408270","text":"Python da qanqay qilib fileni oc'hirsa bo'ladi","user_id":"e4d847ca-2c13-47ff-b9df-c3052550a89a"},{"id":"a6eca80a-c76f-4de6-8b99-6418161c9213","text":"Shunday","user_id":"f45fbb13-2f62-417b-9a6c-7ae7c2fe1f1f"},{"id":"31075cc1-e82f-43d9-8e1f-990dec7f23f4","text":"....????","user_id":"e4d847ca-2c13-47ff-b9df-c3052550a89a"},{"id":"f51a050a-e7e4-49dd-ad4e-eb5dd6169f39","text":"file select and contextmenu and delete","user_id":"f45fbb13-2f62-417b-9a6c-7ae7c2fe1f1f"}]}
