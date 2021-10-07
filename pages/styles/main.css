@@ -84,15 +84,12 @@ body {
 }
 .chat-field {
   width: 100%;
-  height: auto;
+  height: 10%;
   background: #dad3d3;
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 5px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 .chat-field .input,
 .chat-field .btn {
@@ -133,6 +130,18 @@ body {
   }
   .user-list {
     display: none;
+  }
+  .chat-field {
+    width: 100%;
+    height: auto;
+    background: #dad3d3;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
   .chat-field .input {
     width: 75%;
