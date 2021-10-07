@@ -84,11 +84,14 @@ body {
 }
 .chat-field {
     height: 10%;
-    background: #dddcdc;
+    background: #dad3d3;
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 5px;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
 }
 .chat-field .input,
 .chat-field .btn {
