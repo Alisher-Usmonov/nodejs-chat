@@ -123,3 +123,17 @@ body {
 .chat-field .btn:hover svg {
     fill: #FFFFFF;
 }
+@media (max-width: 700px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .user-list {
+        display: none;
+    }
+    .chat-field .input {
+        width: 75%;
+    }
+    .chat-field .btn {
+        width: 25%;
+    }
+}

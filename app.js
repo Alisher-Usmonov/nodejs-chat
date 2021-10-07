@@ -68,7 +68,7 @@ app.post("/chat", async (req, res) => {
     let db = await fs.readFile(path.join(__dirname, "database.json"), "utf-8");
     db = JSON.parse(db);
     let user_id = db.users.filter(user => user.name === name);
-    if(name) {
+    if(text) {
         db.messages.push({
             id: uuidv4(),
             text,
